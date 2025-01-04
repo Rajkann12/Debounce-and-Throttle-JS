@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debounce</title>
+    <style>
+
+        .onInput{
+            border: 1px solid black;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .onMouse{
+            margin: 5px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="onInput">
+        <h3>on input</h3>
+        <input type="text" name="inputText" id="inputText">
+        
+        <div id="default">
+            <h2>
+                Default: <span></span>
+            </h2>
+
+        </div>
+        <div id="debounce">
+            <h2>
+                Debounce: <span></span>
+            </h2>
+        </div>
+        <div id="throttle">
+            <h2>
+                Throttle: <span></span>
+            </h2>
+        </div>
+    </section>
+
+    <section class="onMouse">
+        <h3>on mouse move</h3>
+
+        <div id="defaultMouse">
+            <h2>
+                Default: <span></span>
+            </h2>
+
+        </div>
+        <div id="debounceMouse">
+            <h2>
+                Debounce: <span></span>
+            </h2>
+        </div>
+        <div id="throttleMouse">
+            <h2>
+                Throttle: <span></span>
+            </h2>
+        </div>
+    </section>
+    <script src="./debounceAndThrottle.js"></script>
+</body>
+</html>
